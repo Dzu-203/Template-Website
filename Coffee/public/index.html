@@ -8,12 +8,12 @@
 </head>
 <body>
     <div id="root">
-        <nav class="content-wrapper overflow-hidden text-base bg-[url(./assets/img/hero-bg.jpg)] object-cover w-[100vw] h-[100vh] px-5 py-5 text-white">
-            <header class="flex items-center justify-between">
-                <div class="basis-3/5 text-2xl font-bold tracking-wider cursor-pointer hover:text-coffee">
+        <div class="content-wrapper overflow-hidden text-base bg-[url(./assets/img/hero-bg.jpg)] object-cover w-[100vw] h-[100vh] px-10 py-5 text-white m-lg">
+            <header class="flex items-center justify-between ">
+                <div class="text-2xl font-bold tracking-wider cursor-pointer hover:text-coffee">
                     Coffee
                 </div>
-                <ul class="basis-2/5 flex items-center gap-x-6 justify-center">
+                <ul class="pt-7 md:pt-0 top-menu hidden md:flex md:items-center gap-x-8 md:justify-end mr-10">
                     <li class="ct-hover-coffee">
                         <a href="">Home</a>
                     </li>
@@ -30,6 +30,11 @@
                         <a href="">Contact us</a>
                     </li>
                 </ul>
+                <div class="top-menu-icon flex justify-end md:hidden cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>     
+                </div>
             </header>
             <!-- end header -->
             <main class="flex flex-col justify-center h-full">
@@ -44,9 +49,10 @@
                 </div>
             </main>
             <!-- end main -->
-        </nav>
+        </div>
         <!-- end content-wrapper -->
     </div>
     <!-- end root -->
+    <script src="./main.js"></script>
 </body>
 </html>
