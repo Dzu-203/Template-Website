@@ -580,12 +580,16 @@ video {
   height: 1.5rem;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
+.h-\[200vh\] {
+  height: 200vh;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .w-28 {
@@ -648,6 +652,14 @@ video {
 
 .bg-\[url\(\.\/assets\/img\/hero-bg\.jpg\)\] {
   background-image: url(./assets/img/hero-bg.jpg);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-cover {
@@ -714,22 +726,6 @@ video {
 
 .ct-hover-coffee {
   position: relative;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.5rem;
-}
-
-.ct-hover-coffee::after {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 0.125rem;
-  width: 0px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(184 119 71 / var(--tw-bg-opacity));
-  transition-duration: 300ms;
-  content: var(--tw-content);
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .ct-hover-coffee:hover {
@@ -737,21 +733,40 @@ video {
   color: rgb(184 119 71 / var(--tw-text-opacity));
 }
 
-.ct-hover-coffee:hover::after {
-  content: var(--tw-content);
-  width: 100%;
+@media not all and (min-width: 768px) {
+  .ct-hover-coffee {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .ct-hover-coffee {
-    padding-top: 0px;
     padding-bottom: 1px;
-    padding-left: 0px;
+  }
+
+  .ct-hover-coffee::after {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 0.125rem;
+    width: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(184 119 71 / var(--tw-bg-opacity));
+    transition-duration: 300ms;
+    content: var(--tw-content);
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .ct-hover-coffee:hover::after {
+    content: var(--tw-content);
+    width: 100%;
   }
 }
 
 .custom-menu {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   height: 100%;

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ct-popular{
+    @apply p-[4px] border-2 rounded-full;
+}
+.ct-hover-menu{
+    @apply hover:text-ct-green;
+}
+.ct-menu{
+    @apply fixed bg-white top-0 left-0 w-1/2 text-black h-full pl-8 py-10 z-50;
+}
+.ct-menu li{
+    @apply py-4
+}

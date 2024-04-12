@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .ct-hover-coffee{
-    @apply md:pb-[1px] md:pl-0 md:py-0 pl-6 py-4 hover:text-coffee relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-coffee hover:after:w-full after:duration-300 after:ease-in
+    @apply md:pb-[1px] max-md:pl-6 max-md:py-4 hover:text-coffee relative md:after:absolute md:after:bottom-0 md:after:left-0 md:after:w-0 md:after:h-0.5 md:after:bg-coffee hover:md:after:w-full md:after:duration-300 md:after:ease-in
 }
 .custom-menu{
-    @apply absolute top-0 left-0 bg-white text-black w-1/2 h-full;
+    @apply fixed top-0 left-0 bg-white text-black w-1/2 h-full;
 }
