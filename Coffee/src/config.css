@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ct-hover-coffee{
+    @apply pb-[1px] hover:text-coffee relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:duration-300 after:ease-in
+}
