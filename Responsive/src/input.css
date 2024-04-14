@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ct-menu li{
+    @apply py-4 pl-8 w-full hover:bg-slate-700;
+}
+.ct-menu{
+    @apply fixed top-0 left-0 bg-gray-800 w-1/2 h-full pt-10;
+}
+.ct-title{
+    @apply text-center mx-[5%];
+}
+.ct-title h1{
+    @apply text-3xl font-bold;
+}
+.ct-title span{
+    @apply text-lg font-serif;
+}
+.tilte-content{
+    @apply my-12;
+}
+.card-item {
+    @apply  px-5 py-6 bg-white rounded-2xl w-[350px];  
+}
+
+.card-item h2{
+    @apply text-lg font-bold;
+}
+.card-item span{
+    @apply text-sm
+}
+.card-item-rs{
+    @apply p-0 m-0;
+}
