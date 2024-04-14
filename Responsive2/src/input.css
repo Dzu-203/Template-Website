@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg{
+    height: 100vh;
+    width: 100%;
+    background: url(./assets/img/bg-dot.png),url(./assets/img/bg-dot.png),url(../public/assets/img/bg-round.png),url(../public/assets/img/bg-bottom-hero.png);
+    background-position: top 10px left 10px, top 200px right 10px, left 50% top -5px, bottom -40px left 50%;
+    background-repeat: no-repeat;
+}
+.ct-menu{
+    @apply z-50 fixed top-0 left-0 bg-white text-[#5a53c5] w-1/2 h-full pt-10 ;
+}
+.ct-menu li{
+    @apply hover:bg-[#5a53c5] text-lg font-semibold hover:text-white duration-500 ease-in-out w-full py-4 pl-8 relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-1 after:bg-[#3c3781] hover:after:w-full  after:duration-500 after:ease-in-out;
+}

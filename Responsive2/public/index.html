@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div id="root">
+        <div class="content-wrapper bg-[#5a53c5] text-white text-base overflow-hidden">
+            <header class="fixed top-0 left-0 w-full flex justify-between items-center h-20 px-[5%]">
+                <div class="logo text-3xl font-bold">
+                    VU
+                </div>
+                <ul class="menu hidden  md:flex md:items-center gap-8">
+                    <li class="">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="">About</a>
+                    </li>
+                    <li class="">
+                        <a href="">Service</a>
+                    </li>
+                    <li class="">
+                        <a href="">Project</a>
+                    </li>
+                    <li class="">
+                        <a href="">Contact</a>
+                    </li>
+                    <div class="exit absolute w-8 h-8 top-2 right-2 cursor-pointer hidden">
+                        <img class="" src="./assets/img/times.svg" alt="">
+                    </div>
+                </ul>
+                <div class="md:hidden menu-icon cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                      </svg>                      
+                </div>
+            </header>
+            <!-- end header  -->
+            <section class="bg">
+                <div class="flex h-full justify-center items-center">
+                    <div class=" text-white h-full flex flex-col justify-center mx-[5%] max-w-[600px]">
+                        <h1 class="text-4xl font-bold">Top free tool and extension to radiply grow you business</h1>
+                        <span class="my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste modi expedita, laborum consequatur architecto sapiente quae eveniet odit corrupti totam!</span>
+                        <div class="btn-box flex gap-8">
+                            <div class="border-2 border-white px-3 py-2 rounded-full hover:bg-white hover:text-[#5a53c5] duration-300 cursor-pointer select-none ease-in">Read More</div>
+                            <div class="border-2 border-white px-3 py-2 rounded-full hover:bg-white hover:text-[#5a53c5] duration-300 cursor-pointer select-none ease-in">Contact us</div>
+                        </div>
+                    </div>
+                    <div class="z-50 m-auto">
+                        <img src="./assets/img/hero.png" alt="">
+                    </div>
+                </div>
+            </section>
+            
+            
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
