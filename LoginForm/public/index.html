@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+<body>
+    <div id="root">
+        <div class="relative content-wrapper text-white text-base bg-[url(./assets/img/bg.jpg)] bg-no-repeat bg-cover h-[100vh] object-center overflow-hidden">
+            <header>
+                <nav class="flex justify-between items-center my-8 mx-[5%]">
+                    <div class="text-4xl font-bold">
+                        <a href="">VU</a>
+                    </div>
+                    <ul class="menu animate-slideMenu hidden md:flex items-center gap-x-8">
+                        <li class="">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="">Product</a>
+                        </li>
+                        <li class="">
+                            <a href="">Services</a>
+                        </li>
+                        <li class="">
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                                      
+                    <div class="max-md:ml-auto max-md:mr-8 btn-login hover:opacity-40 duration-500 ease-in-out px-5 select-none rounded-md py-2 border-2 cursor-pointer">
+                        Login
+                    </div>
+                    <div class="menu-icon md:hidden cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                          </svg>  
+                    </div>
+                </nav>
+            </header>
+            <div class="hidden form fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]">
+                <form class="form-login  rounded-2xl px-12 py-12 text-black  bg-white relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-md:max-w-[350px] md:w-[400px] animate-slideDown" action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cursor-pointer  w-6 h-6 absolute top-3 right-3 exit-icon ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>                      
+                    <h1 class="text-center text-3xl font-bold mb-12 uppercase">Login</h1>
+                    <div class="mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                          </svg>                          
+                        <input class="w-full px-9  border-b-2 border-gray-500 pb-2 outline-none mb-4" type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                          </svg>
+                          
+                        <input class="w-full px-9 border-b-2 border-gray-500 pb-2 outline-none mb-4" type="text" placeholder="Enter your password">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </div>
+                        <span>Forgot Password ?</span>
+                    </div>
+                    <button class="w-full my-8 rounded-full p-4 bg-blue-700 text-yellow-100" type="submit">Login Now</button>
+                    <span class="flex justify-center">Dont't have an account??<span class="btn-signup cursor-pointer select-none font-semibold ml-2">Signup</span></span>
+                </form>
+                <form class="hidden form-signup rounded-2xl px-12 py-12 text-black  bg-white relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-md:max-w-[350px] md:w-[400px]" action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="exit-icon cursor-pointer  w-6 h-6 absolute top-3 right-3 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>
+                    <h1 class="text-center text-3xl font-bold mb-12 uppercase">signup</h1>
+                    <div class="mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                          </svg>                          
+                        <input class="w-full px-9  border-b-2 border-gray-500 pb-2 outline-none mb-4" type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" absolute w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                          </svg>
+                          
+                        <input class="w-full px-9 border-b-2 border-gray-500 pb-2 outline-none mb-4" type="text" placeholder="Create password">
+                    </div>
+                    <div class="mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                          </svg>
+                        <input class="w-full px-9 border-b-2 border-gray-500 pb-2 outline-none mb-4" type="text" placeholder="Confim password">
+                    </div>
+                    <button class="w-full my-8 rounded-full p-4 bg-blue-700 text-yellow-100" type="submit">Login Now</button>
+                    <span class="flex justify-center">Already have an account??<span class="btn-signin cursor-pointer select-none font-semibold ml-2">Login</span></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
