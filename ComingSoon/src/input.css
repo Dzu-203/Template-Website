@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.number{
+    @apply text-6xl font-bold 
+}
+.coming-soon-item{
+    @apply flex flex-col items-center justify-center mb-5
+}
+.coming-soon-item > span:last-child{
+    @apply text-xl font-semibold
+}
